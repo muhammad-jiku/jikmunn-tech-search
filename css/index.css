@@ -40,6 +40,8 @@
 }
 /* css for message section ends */
 
+
+/* css for card section starts */
 .card-heading-text{
     font-family: 'Barlow', sans-serif;
 }
@@ -47,3 +49,4 @@
 .card-body-text{
     font-family: 'Poppins', sans-serif;
 }
+/* css for card section ends */

@@ -73,14 +73,14 @@ const displaySearchResult = (mobiles) => {
   } else {
     mobiles.forEach((mobile) => {
       const childSection = document.createElement('section');
-      childSection.classList.add('col');
+      childSection.classList.add('col-12', 'col-lg-4');
       console.log(mobile.length);
       childSection.innerHTML = `
         <section class="card h-100">
-            <img class="card-img-top" src="${mobile?.image}" alt="pic">
+            <img class="card-img-top img-fluid" src="${mobile?.image}" alt="pic">
             <section class="card-body card-body-text">
                 <h2 class="card-title">${mobile?.brand}</h2>
-                <h3 class="card-text">${mobile?.phone_name}</h3>
+                <h4 class="card-text">${mobile?.phone_name}</h4>
                 <button onclick="phoneDetails('${mobile?.slug}')" class="btn btn-primary">Details</button>
             </section>
         </section>    
@@ -106,18 +106,17 @@ const displayPhoneDetails = (details) => {
   const parentSection = document.getElementById('single-result-card');
   parentSection.textContent = '';
   const childSection = document.createElement('section');
-  console.log(details);
   childSection.innerHTML = `
       <section class="card">
-            <img class="img-fluid h-25 w-25 ms-5" src="${details?.image}">
+            <img class="img-fluid h-25 w-50 ms-5" src="${details?.image}">
             <section class="card-header card-heading-text">
                 <h2 class="card-title">${details?.brand}</h2>
-                <h3 class="card-subtitle mb-2">${details?.name}</h3>
-                <h3 class="card-subtitle mb-2 text-muted">${
+                <h4 class="card-subtitle mb-2">${details?.name}</h4>
+                <h5 class="card-subtitle mb-2 text-muted">${
                   details?.releaseDate
                     ? details?.releaseDate
                     : 'Release date unknown'
-                }</h3>
+                }</h5>
             </section>
             <section class="card-body card-body-text">
                 <ul class="list-group list-group-flush">
