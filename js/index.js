@@ -28,7 +28,6 @@ const messageSection = (message, messgeText) => {
     'message-section-heading-highlight'
   );
   textMessage.style.display = message;
-  // textMessage.style.color = var(--)
   textMessage.innerHTML = messgeText;
 };
 
@@ -79,7 +78,7 @@ const displaySearchResult = (mobiles) => {
       childSection.innerHTML = `
         <section class="card h-100">
             <img class="card-img-top" src="${mobile?.image}" alt="pic">
-            <section class="card-body">
+            <section class="card-body card-body-text">
                 <h2 class="card-title">${mobile?.brand}</h2>
                 <h3 class="card-text">${mobile?.phone_name}</h3>
                 <button onclick="phoneDetails('${mobile?.slug}')" class="btn btn-primary">Details</button>
@@ -111,7 +110,7 @@ const displayPhoneDetails = (details) => {
   childSection.innerHTML = `
       <section class="card">
             <img class="img-fluid h-25 w-25 ms-5" src="${details?.image}">
-            <section class="card-header">
+            <section class="card-header card-heading-text">
                 <h2 class="card-title">${details?.brand}</h2>
                 <h3 class="card-subtitle mb-2">${details?.name}</h3>
                 <h3 class="card-subtitle mb-2 text-muted">${
@@ -120,7 +119,7 @@ const displayPhoneDetails = (details) => {
                     : 'Release date unknown'
                 }</h3>
             </section>
-            <section class="card-body">
+            <section class="card-body card-body-text">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">${
                       details?.mainFeatures?.chipSet

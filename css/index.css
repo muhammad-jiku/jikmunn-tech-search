@@ -25,16 +25,25 @@
 /* css for spinner starts */
 .spinner-section{
     display: none;
+    font-family: 'Roboto Serif', sans-serif;
 }
 /* css for spinner ends */
 
 /* css for message section starts */
 .message-section-heading{
-    font-family: 'Roboto Serif', sans-serif;
     font-size: 28px;
+    font-family: 'Roboto Serif', sans-serif;
 }
 
 .message-section-heading-highlight{
     color: rgba(107, 4, 4, 0.719);
 }
 /* css for message section ends */
+
+.card-heading-text{
+    font-family: 'Barlow', sans-serif;
+}
+
+.card-body-text{
+    font-family: 'Poppins', sans-serif;
+}
