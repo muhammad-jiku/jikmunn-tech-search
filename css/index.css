@@ -1,0 +1,41 @@
+:root{
+    /* --main: rgba(15, 14, 14, 0.884); */
+    --primary: #6047EC;
+    --secondary: #6047EC;
+    --tertiary: rgba(124, 25, 25, 0.863);
+    --quaternary: rgba(54, 2, 2, 0.719);
+}
+
+/* heading section starts */
+.heading{
+    color: rgba(124, 25, 25, 0.863);
+}
+.heading > a,.heading > a:hover {
+    color: rgba(124, 25, 25, 0.863);
+}
+/* heading section ends */
+
+/* input section starts */
+.search-section{
+    /* background-color: #6047EC; */
+    font-family: cursive;
+}
+/* input section ends */
+
+/* css for spinner starts */
+.spinner-section{
+    display: none;
+}
+/* css for spinner ends */
+
+/* css for message section starts */
+.message-section-heading{
+    /* color: #6047EC; */
+    /* -webkit-box-reflect: above -5px linear-gradient(transparent,rgba(124, 25, 25, 0.863)); */
+    font-size: 28px;
+}
+
+.message-section-heading-highlight{
+    color: rgba(107, 4, 4, 0.719);
+}
+/* css for message section ends */
