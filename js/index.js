@@ -10,8 +10,25 @@ const loadMobiles = async (searchInputText) => {
   try {
     const res = await fetch(url);
     const searchMobileData = await res.json();
-    console.log(searchMobileData?.data);
+    displaySearchResult(searchMobileData?.data);
   } catch (error) {
     console.log(error);
   }
+};
+
+const displaySearchResult = (mobiles) => {
+  const parentSection = document.getElementById('search-result-card');
+  parentSection.textContent = '';
+  mobiles.forEach((mobile) => {
+    const childSection = document.createElement('section');
+    console.log(mobile);
+    childSection.innerHTML = `Sorry this mobile is not available now!`;
+    childSection.innerHTML = `
+            <img src="${mobile?.image}">
+            <h2>${mobile?.brand}</h2>
+            <h3>${mobile?.phone_name}</h3>
+        `;
+    parentSection.appendChild(childSection);
+  });
+  //   }
 };
