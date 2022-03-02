@@ -73,7 +73,7 @@ const displaySearchResult = (techDevices) => {
             <img class="card-img-top img-fluid" src="${device?.image}" alt="pic">
             <section class="card-body card-body-text">
                 <h2 class="card-title">${device?.brand}</h2>
-                <h4 class="card-text text-muted">${device?.phone_name}</h4>
+                <h5 class="card-text text-muted">${device?.phone_name}</h5>
                 <button onclick="techDeviceDetails('${device?.slug}')" class="btn btn-primary">Details</button>
             </section>
         </section>    
