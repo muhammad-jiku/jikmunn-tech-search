@@ -1,26 +1,26 @@
 :root{
     /* --main: rgba(15, 14, 14, 0.884); */
-    --primary: #6047EC;
-    --secondary: #6047EC;
+    --primary: #221955;
+    --secondary: #201c3a;
     --tertiary: rgba(124, 25, 25, 0.863);
     --quaternary: rgba(54, 2, 2, 0.719);
 }
 
-/* heading section starts */
+/*css for heading section starts */
 .heading{
+    color: #281a86d3;
+    font-family: 'Poppins', sans-serif;
+}
+.heading > span{
     color: rgba(124, 25, 25, 0.863);
 }
-.heading > a,.heading > a:hover {
-    color: rgba(124, 25, 25, 0.863);
-}
-/* heading section ends */
+/* css for heading section ends */
 
-/* input section starts */
+/*css for input section starts */
 .search-section{
-    /* background-color: #6047EC; */
-    font-family: cursive;
+    font-family: 'Barlow', sans-serif;
 }
-/* input section ends */
+/* css for input section ends */
 
 /* css for spinner starts */
 .spinner-section{
@@ -30,8 +30,7 @@
 
 /* css for message section starts */
 .message-section-heading{
-    /* color: #6047EC; */
-    /* -webkit-box-reflect: above -5px linear-gradient(transparent,rgba(124, 25, 25, 0.863)); */
+    font-family: 'Roboto Serif', sans-serif;
     font-size: 28px;
 }
 
