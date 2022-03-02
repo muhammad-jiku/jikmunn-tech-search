@@ -7,6 +7,12 @@
     <title>Phone Store!</title>
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- style css -->
+    <style>
+        .spinner{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <section class="container">
@@ -17,6 +23,11 @@
             <input type="text" class="form-control" placeholder="Search Phone!!" aria-label="Search Phone!!" aria-describedby="searchBtn" id="search">
             <button class="input-group-text text-white bg-dark" onclick="searchMobile()" id="searchBtn">Search</button>
         </section> 
+        <!-- loading spinner -->
+        <section id="spinner" class="spinner">
+            <strong>Loading...</strong>
+            <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+        </section>
         <!-- single card -->   
         <section class="m-4" id="single-result-card"></section>
         <!-- card -->

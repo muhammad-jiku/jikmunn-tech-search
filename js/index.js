@@ -6,6 +6,14 @@ const searchMobile = () => {
   }
   searchInput.value = '';
   loadMobiles(searchInputText);
+  toggleSpinner('flex', 'center');
+};
+
+// toggle spinner
+const toggleSpinner = (displayStyle, displayStyleAlign) => {
+  const spinner = document.getElementById('spinner');
+  spinner.style.display = displayStyle;
+  spinner.style.alignItems = displayStyleAlign;
 };
 
 const loadMobiles = async (searchInputText) => {
@@ -38,6 +46,7 @@ const displaySearchResult = (mobiles) => {
         `;
     parentSection.appendChild(childSection);
   });
+  toggleSpinner('none', '');
 };
 
 const phoneDetails = async (phoneId) => {
